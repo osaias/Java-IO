@@ -18,6 +18,7 @@ public class TesteFileWriter {
 			while(scanner.hasNext()) {
 				writer.write(scanner.nextLine());
 				writer.write(System.lineSeparator());
+				writer.flush();
 			}
 			
 			scanner.close();
