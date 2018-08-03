@@ -2,6 +2,8 @@ package br.com.alura.teste;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -11,7 +13,8 @@ public class TesteScanner {
 
 		Scanner entrada;
 		try {
-			entrada = new Scanner(new File("contas.csv"));
+			//entrada = new Scanner(new File("contas.csv"));
+			entrada = new Scanner(new File("encoding.csv"));
 			Scanner linha = null;
 
 			while(entrada.hasNextLine()) {

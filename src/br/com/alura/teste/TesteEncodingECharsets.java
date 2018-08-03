@@ -9,11 +9,7 @@ public class TesteEncodingECharsets {
 	public static void main(String[] args) throws UnsupportedEncodingException {
 		
 		String alfabeto = "çóéíúãõêÇÓÉÍÚÃÕÊ";
-		
-		for (int i = 0; i < alfabeto.length(); i++) {
 			
-		}
-		
 		System.out.printf("%-12s %-12s %-12s %-12s %-12s %-12s %-12s\n","LETRA", "UNICODE", "ISO-8859-1", "US-ASCII", "UTF-16", "UTF-8", "WINDOWS=1252");
 		for (int i = 0; i < alfabeto.length(); i++) {
 			
@@ -28,7 +24,7 @@ public class TesteEncodingECharsets {
 			System.out.println();
 		}
 		
-		
+		System.out.println("Encoding do SO: " + Charset.defaultCharset().displayName());
 
 	}
 
